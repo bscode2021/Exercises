@@ -11,7 +11,7 @@ namespace SimpleMVC.Data.Entities
         public int CategoryID { get; set; }
 
         [Required]
-        [StringLength(100)]
+        [StringLength(100, ErrorMessage = "Text too long")]
         public string? CategoryName { get; set; }
 
         [StringLength(250)]
