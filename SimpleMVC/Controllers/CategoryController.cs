@@ -64,7 +64,6 @@ namespace SimpleMVC.Controllers
                     _db.Categories.Update(categoryToEdit);
                     _db.SaveChanges();
                 }
-
                 return RedirectToRoute("Start/Index");
             }
             catch
